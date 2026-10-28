@@ -1,0 +1,687 @@
+
+/* =========================================
+   PORTOFOLIO MUQTAFIY
+   EMERALD MODERN
+   RESPONSIVE + DARK MODE
+   FIXED NAVBAR
+========================================= */
+
+/* 1. RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 110px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #F5FAF7;
+    color: #24372E;
+    line-height: 1.7;
+    padding-top: 82px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #16845B;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* 2. NAVBAR SELALU TERLIHAT */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    min-height: 82px;
+    padding: 14px 5%;
+    z-index: 99999;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    background: #FFFFFF;
+    border-bottom: 1px solid #DDEBE2;
+    box-shadow: 0 3px 15px rgba(20, 70, 45, 0.08);
+}
+
+/* Judul Portofolio */
+nav h1,
+nav h2,
+nav .logo,
+nav .brand {
+    margin: 0;
+    padding: 0;
+    color: #126B49;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+}
+
+/* Menu navigasi */
+nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px 20px;
+
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a,
+nav > a {
+    display: inline-block;
+    color: #28513D;
+    font-size: 14px;
+    font-weight: 600;
+    white-space: nowrap;
+    padding: 6px 0;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover,
+nav > a:hover {
+    color: #159667;
+}
+
+/* Hilangkan bullet pada menu */
+nav li {
+    list-style: none;
+}
+
+/* Tombol Dark Mode */
+#dark-mode-toggle {
+    flex-shrink: 0;
+    padding: 10px 14px;
+    margin: 0;
+
+    background: #DDF7E8;
+    color: #126B49;
+    border: 1px solid #B8E8CC;
+    border-radius: 8px;
+
+    font-size: 13px;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: background-color 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background: #BCEFD1;
+}
+
+/* 3. JUDUL SECTION */
+section {
+    padding: 70px 8%;
+    scroll-margin-top: 110px;
+}
+
+section h2 {
+    color: #126B49;
+    font-size: clamp(24px, 3.5vw, 30px);
+    line-height: 1.35;
+    text-align: center;
+    margin: 0 auto 30px;
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    overflow-wrap: break-word;
+}
+
+/* 4. HOME */
+#home {
+    min-height: 460px;
+    padding: 80px 8%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    background: linear-gradient(
+        135deg,
+        #E9F9EF,
+        #F8FCF9,
+        #DDF5E7
+    );
+}
+
+#home h1 {
+    max-width: 850px;
+    margin: 0 auto 18px;
+    color: #126B49;
+    font-size: clamp(29px, 5vw, 46px);
+    line-height: 1.25;
+}
+
+#home p {
+    max-width: 650px;
+    margin-bottom: 8px;
+    color: #50675A;
+}
+
+#home img {
+    width: 165px;
+    height: 165px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #FFFFFF;
+    outline: 3px solid #34D399;
+    margin: 25px auto;
+    box-shadow: 0 8px 25px rgba(18, 107, 73, 0.15);
+}
+
+/* 5. TENTANG SAYA */
+#tentang {
+    background: #FFFFFF;
+}
+
+#tentang p {
+    max-width: 850px;
+    margin: 0 auto 25px;
+    color: #52665A;
+    text-align: justify;
+}
+
+/* 6. TABEL PENDIDIKAN */
+table {
+    width: 100%;
+    max-width: 850px;
+    margin: 25px auto;
+    border-collapse: collapse;
+    background: #FFFFFF;
+}
+
+th,
+td {
+    padding: 14px 16px;
+    border: 1px solid #DDEBE2;
+    text-align: left;
+}
+
+th {
+    background: #16845B;
+    color: #FFFFFF;
+}
+
+td {
+    color: #344C3D;
+}
+
+tr:nth-child(even) td {
+    background: #F0F9F3;
+}
+
+/* 7. SKILL */
+#skill {
+    background: #F0F8F3;
+}
+
+#skill ul {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    list-style: none;
+}
+
+#skill li {
+    padding: 14px 22px;
+    background: #FFFFFF;
+    color: #176B49;
+    border: 1px solid #CDE8D7;
+    border-radius: 10px;
+    font-weight: bold;
+    list-style: none;
+    box-shadow: 0 4px 12px rgba(20, 70, 45, 0.04);
+    transition: all 0.3s;
+}
+
+#skill li:hover {
+    background: #16845B;
+    color: #FFFFFF;
+    transform: translateY(-4px);
+}
+
+/* 8. PROJECT */
+#project {
+    background: #FFFFFF;
+}
+
+#project article {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    padding: 25px;
+
+    background: #F7FBF8;
+    border: 1px solid #DDEBE2;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(20, 70, 45, 0.05);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+#project article:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(20, 70, 45, 0.1);
+}
+
+#project article h3 {
+    margin-bottom: 12px;
+    color: #126B49;
+    font-size: 21px;
+    line-height: 1.4;
+}
+
+#project article p {
+    margin-bottom: 15px;
+    color: #52665A;
+}
+
+#project article img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 15px 0;
+}
+
+/* 9. KONTAK */
+#kontak {
+    background: #F0F8F3;
+}
+
+#kontak form {
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 28px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    background: #FFFFFF;
+    border: 1px solid #DDEBE2;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(20, 70, 45, 0.05);
+}
+
+#kontak label {
+    margin-top: 5px;
+    color: #28513D;
+    font-weight: bold;
+}
+
+#kontak input,
+#kontak textarea {
+    width: 100%;
+    padding: 13px 14px;
+    background: #FAFCFA;
+    color: #24372E;
+    border: 1px solid #C9DCCF;
+    border-radius: 8px;
+    outline: none;
+}
+
+#kontak input:focus,
+#kontak textarea:focus {
+    border-color: #16845B;
+    box-shadow: 0 0 0 3px rgba(52, 211, 153, 0.15);
+}
+
+#kontak textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+#kontak button[type="submit"] {
+    padding: 12px 18px;
+    background: #16845B;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+#kontak button[type="submit"]:hover {
+    background: #106B48;
+}
+
+/* 10. DARK MODE */
+body.dark-mode {
+    background: #10231D !important;
+    color: #E5F5EC !important;
+}
+
+body.dark-mode nav {
+    background: #0B1914 !important;
+    border-bottom-color: #29483A;
+}
+
+body.dark-mode nav h1,
+body.dark-mode nav h2,
+body.dark-mode nav .logo,
+body.dark-mode nav .brand {
+    color: #6EE7B7 !important;
+}
+
+body.dark-mode nav ul li a,
+body.dark-mode nav > a {
+    color: #D1FAE5 !important;
+}
+
+body.dark-mode nav ul li a:hover,
+body.dark-mode nav > a:hover {
+    color: #6EE7B7 !important;
+}
+
+body.dark-mode #dark-mode-toggle {
+    background: #34D399 !important;
+    color: #064E3B !important;
+    border-color: #34D399 !important;
+}
+
+body.dark-mode #dark-mode-toggle:hover {
+    background: #6EE7B7 !important;
+}
+
+/* Home */
+body.dark-mode #home {
+    background: linear-gradient(
+        135deg,
+        #10231D,
+        #173629,
+        #1B382D
+    ) !important;
+}
+
+body.dark-mode #home h1,
+body.dark-mode section h2,
+body.dark-mode #project article h3 {
+    color: #6EE7B7 !important;
+}
+
+body.dark-mode #home p {
+    color: #D1E7DA !important;
+}
+
+/* Section */
+body.dark-mode #tentang,
+body.dark-mode #project {
+    background: #10231D !important;
+}
+
+body.dark-mode #skill,
+body.dark-mode #kontak {
+    background: #142B22 !important;
+}
+
+body.dark-mode #tentang p,
+body.dark-mode #project article p {
+    color: #D1E7DA !important;
+}
+
+/* Tabel */
+body.dark-mode table {
+    background: #1B382D !important;
+}
+
+body.dark-mode th {
+    background: #24513E !important;
+    color: #D1FAE5 !important;
+}
+
+body.dark-mode td,
+body.dark-mode tr:nth-child(even) td {
+    background: #1B382D !important;
+    color: #E5F5EC !important;
+    border-color: #315B47 !important;
+}
+
+/* Skill */
+body.dark-mode #skill li {
+    background: #1B382D !important;
+    color: #A7F3D0 !important;
+    border-color: #315B47 !important;
+}
+
+body.dark-mode #skill li:hover {
+    background: #34D399 !important;
+    color: #064E3B !important;
+}
+
+/* Project */
+body.dark-mode #project article {
+    background: #1B382D !important;
+    border-color: #315B47 !important;
+}
+
+/* Form */
+body.dark-mode #kontak form {
+    background: #1B382D !important;
+    border-color: #315B47 !important;
+}
+
+body.dark-mode #kontak label {
+    color: #D1FAE5 !important;
+}
+
+body.dark-mode #kontak input,
+body.dark-mode #kontak textarea {
+    background: #10231D !important;
+    color: #F0FDF4 !important;
+    border-color: #47765E !important;
+}
+
+body.dark-mode #kontak input::placeholder,
+body.dark-mode #kontak textarea::placeholder {
+    color: #A3BFB0 !important;
+}
+
+body.dark-mode #kontak button[type="submit"] {
+    background: #34D399 !important;
+    color: #064E3B !important;
+}
+
+/* 11. RESPONSIVE TABLET */
+@media screen and (max-width: 900px) {
+    section {
+        padding: 60px 5%;
+    }
+
+    nav {
+        padding: 12px 4%;
+        gap: 12px;
+    }
+
+    nav ul {
+        gap: 8px 14px;
+    }
+
+    #home img {
+        width: 145px;
+        height: 145px;
+    }
+}
+
+/* 12. RESPONSIVE HP */
+@media screen and (max-width: 600px) {
+    body {
+        padding-top: 132px;
+    }
+
+    html {
+        scroll-padding-top: 145px;
+    }
+
+    nav {
+        min-height: 132px;
+        padding: 10px 8px;
+        justify-content: center;
+        align-content: center;
+        gap: 7px 12px;
+    }
+
+    nav h1,
+    nav h2,
+    nav .logo,
+    nav .brand {
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+    }
+
+    nav ul {
+        width: 100%;
+        justify-content: center;
+        gap: 4px 13px;
+    }
+
+    nav ul li a,
+    nav > a {
+        font-size: 12px;
+        padding: 4px 0;
+    }
+
+    #dark-mode-toggle {
+        padding: 7px 11px;
+        font-size: 12px;
+    }
+
+    section {
+        padding: 45px 5%;
+        scroll-margin-top: 145px;
+    }
+
+    section h2 {
+        font-size: 24px;
+        margin-bottom: 22px;
+    }
+
+    #home {
+        min-height: 390px;
+        padding: 55px 6%;
+    }
+
+    #home h1 {
+        font-size: 29px;
+    }
+
+    #home img {
+        width: 125px;
+        height: 125px;
+    }
+
+    #tentang p {
+        text-align: left;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th,
+    td {
+        padding: 9px 7px;
+        overflow-wrap: anywhere;
+    }
+
+    #skill ul {
+        gap: 10px;
+    }
+
+    #skill li {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+
+    #project article {
+        padding: 18px;
+    }
+
+    #project article h3 {
+        font-size: 19px;
+    }
+
+    #kontak form {
+        padding: 20px 16px;
+    }
+
+    #kontak input,
+    #kontak textarea {
+        font-size: 14px;
+    }
+}
+
+/* 13. TRANSISI */
+body,
+nav,
+section,
+article,
+input,
+textarea,
+button {
+    transition:
+        background-color 0.3s ease,
+        color 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* 14. AKSESIBILITAS */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+    }
+}

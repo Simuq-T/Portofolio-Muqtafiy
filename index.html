@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Mahasiswa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header>
+        <nav>
+            <h2>Portofolio</h2>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#tentang">Tentang</a></li>
+                <li><a href="#skill">Skill</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>         
+            <button id="dark-mode-toggle" type="button">
+                🌙 Dark Mode
+            </button>
+        </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home">
+        <h1>Halo, Saya Muqtafiy</h1>
+        <img src="Profil.png"
+             alt="Foto Profil Mahasiswa"
+             width="200">
+
+        <p><strong>Nama:</strong> Muqtafiy Muhammad</p>
+        <p><strong>NIM:</strong> 40425047</p>
+        <p><strong>Program Studi:</strong> Bisnis Digital</p>
+        <p>Selamat datang di website portofolio saya.</p>
+    </section>
+
+    <!-- TENTANG -->
+    <section id="tentang">
+        <h1>Tentang Saya</h1>
+        <p>
+            Saya adalah mahasiswa Program Studi Bisnis Digital
+            yang tertarik mempelajari teknologi, pemasaran digital,
+            dan pengembangan website. Saya terus belajar untuk
+            meningkatkan kemampuan dan menambah pengalaman
+            melalui berbagai proyek.
+        </p>
+
+        <h2>Riwayat Pendidikan</h2>
+        <table border="1">
+            <tr>
+                <th>No</th>
+                <th>Jenjang</th>
+                <th>Nama Sekolah</th>
+                <th>Tahun</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>SD</td>
+                <td>MI 01 Salafiyah Pekalongan</td>
+                <td>2013-2019</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>SMP</td>
+                <td>SMP Salfiyah Pekalongan</td>
+                <td>2019-2022</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>SMA/SMK</td>
+                <td>SMK Negeri 2 Pekalongan</td>
+                <td>2022-2025</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Perguruan Tinggi</td>
+                <td>UIN K.H. Abdurrahman Wahid Pekalongan</td>
+                <td>2025-sekarang</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- SKILL -->
+    <section id="skill">
+        <h1>Skill</h1>
+        <ul>
+            <li>HTML dasar</li>
+            <li>CSS dasar</li>
+            <li>JavaScript dasar</li>
+            <li>Microsoft Word</li>
+            <li>Desain grafis</li>
+            <li>Digital marketing</li>
+        </ul>
+    </section>
+
+    <!-- PROJECT -->
+    <section id="project">
+        <h1>Project Saya</h1>
+
+        <article>
+            <h2>Project 1: Website Portofolio</h2>
+            <p>
+                Website sederhana untuk menampilkan identitas,
+                kemampuan, dan pengalaman mahasiswa.
+            </p>
+            <a href="#home">Lihat bagian Home</a>
+        </article>
+
+        <article>
+            <h2>Project 2: Desain Poster Digital</h2>
+            <p>
+                Membuat desain poster digital untuk menyampaikan
+                informasi dan mempromosikan sebuah kegiatan.
+            </p>
+            <a href="#project">Lihat project</a>
+        </article>
+    </section>
+
+    <!-- KONTAK -->
+    <section id="kontak">
+        <h1>Hubungi Saya</h1>
+
+        <form id="contact-form">
+            <label for="nama">Nama:</label><br>
+            <input type="text" id="nama"
+                   name="nama" placeholder="Masukkan nama"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email"
+                   name="email" placeholder="Masukkan email"><br><br>
+
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan"
+                      placeholder="Tulis pesan kamu"></textarea><br><br>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </section>
+
+<script src="script.js"></script>
+</body>
+</html>
